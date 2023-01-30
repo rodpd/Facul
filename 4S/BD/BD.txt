@@ -1,0 +1,124 @@
+1.
+SELECT Datanasc, Endereco
+FROM FUNCIONARIO
+WHERE Pnome = 'Joao'
+AND Minicial = 'B'
+AND Unome = 'Silva';
+
+2.
+SELECT Pnome, Minicial, Unome, Endereco
+FROM FUNCIONARIO,
+	DEPARTAMENTO
+WHERE Dnome = 'Pesquisa'
+AND Dnr = Dnumero;
+
+3.
+SELECT Projnome, Projnumero, Dnum, Unome, Endereco, Datanasc
+FROM FUNCIONARIO,
+	PROJETO,
+	DEPARTAMENTO
+WHERE Projlocal = 'Maua'
+AND Dnumero = Dnum
+AND Cpf = Cpf_gerente;
+
+4.
+SELECT F.Pnome, F.Unome, S.Pnome, S.Unome
+FROM FUNCIONARIO F,
+	FUNCIONARIO S
+WHERE F.Cpf_supervisor = S.Cpf
+
+5.
+SELECT Projnumero
+FROM PROJETO,
+	FUNCIONARIO,
+	TRABALHA_EM
+WHERE Projnumero = Pnr
+AND Cpf = Fcpf
+AND Unome = 'Silva'
+
+6.
+SELECT Pnome, Minicial, Unome
+FROM FUNCIONARIO
+WHERE Endereco LIKE '%Sao Paulo, SP%'
+
+7.
+SELECT Salario*1.1
+FROM FUNCIONARIO,
+	TRABALHA_EM,
+	PROJETO
+WHERE Projnome = 'Produto X'
+AND Projnumero = Pnr
+AND Cpf = Fcpf
+
+8.
+SELECT Pnome, Unome, Salario
+FROM FUNCIONARIO
+WHERE Dnr = '5'
+AND Salario >= 30000
+AND Salario <= 40000
+
+9.
+SELECT Pnome, Unome, Projnome, Dnr
+FROM FUNCIONARIO,
+	PROJETO,
+	TRABALHA_EM
+WHERE Cpf = Fcpf
+AND Pnr = Projnumero
+ORDER BY Dnr ASC, Unome ASC, Pnome ASC
+
+10.
+SELECT Pnome, Minicial, Unome
+FROM FUNCIONARIO
+WHERE Cpf_supervisor IS NULL
+
+11.
+
+
+12.
+SELECT Pnome, Minicial, Unome
+FROM FUNCIONARIO
+WHERE Salario > ALL ( SELECT Salario
+					FROM FUNCIONARIO
+					WHERE Dnr = '5')
+
+13.
+SELECT DISTINCT Pnome, Minicial, Unome
+FROM FUNCIONARIO F,
+	DEPENDENTE D
+WHERE Cpf = Fcpf
+AND Pnome = Nome_dependente
+AND F.Sexo = D.Sexo
+
+14.
+SELECT DISTINCT Fcpf
+FROM TRABALHA_EM
+WHERE Pnr = 1
+OR Pnr = 2
+OR Pnr = 3
+
+15.
+SELECT DISTINCT F.Pnome, F.Unome, D.Pnome, D.Unome
+FROM FUNCIONARIO F
+LEFT OUTER JOIN FUNCIONARIO D ON F.Cpf_supervisor = D.Cpf;
+
+16.
+SELECT SUM(Salario) Soma, MAX(Salario) Max, MIN(Salario) Min, AVG(Salario) Media
+FROM FUNCIONARIO,
+	DEPARTAMENTO
+WHERE Dnr = Dnumero
+AND Dnome = 'Pesquisa'
+
+17.
+SELECT COUNT(cpf) Qnt
+FROM FUNCIONARIO
+
+18.
+SELECT Count(Cpf) Qnt
+FROM FUNCIONARIO,
+	DEPARTAMENTO
+WHERE Dnr = Dnumero
+GROUP BY Dnr
+
+19.
+
+20.

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "902382500785",
+    "firebase_url": "https://cepapp-c4911.firebaseio.com",
+    "project_id": "cepapp-c4911",
+    "storage_bucket": "cepapp-c4911.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902382500785:android:96e6d8ffa73ac945461b90",
+        "android_client_info": {
+          "package_name": "com.example.webservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902382500785-38dracggoadiusoei429f51ehnpmh8hh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.webservice",
+            "certificate_hash": "1ccbe0586b108aa9003b20f66a83303447c2452c"
+          }
+        },
+        {
+          "client_id": "902382500785-mtockgopq69pfnj8ssm3kk20pfes7ncf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx4nIyViWPRfIkfMR2ZQoQnRpBlPgw-JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902382500785-mtockgopq69pfnj8ssm3kk20pfes7ncf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

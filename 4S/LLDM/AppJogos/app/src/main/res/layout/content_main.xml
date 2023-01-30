@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/azul">
+
+    <TextView
+        android:id="@+id/lblSons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sons_animais"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        android:textColor="@color/rosa"/>
+
+    <ImageView
+        android:id="@+id/image_sons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSons"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/som_animais" />
+
+    <TextView
+        android:id="@+id/lblAdivinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adivinha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_sons"
+        app:layout_constraintVertical_bias="0.101"
+        android:textColor="@color/rosa"/>
+
+    <ImageView
+        android:id="@+id/image_adivinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAdivinha"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/jogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

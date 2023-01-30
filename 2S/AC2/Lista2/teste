@@ -1,0 +1,6 @@
+.text
+.globl main
+main:
+
+addi $s0, $0, 0x6ffffff
+andi $s1, $s0, 0x00000001

@@ -1,0 +1,44 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Fri May 24 03:58:44 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000034
+     .config_2007_PISCA.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000019      
+                            0x002007    0x002007      
+            27 out of 2182 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   ATRASO   0x00000b    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                  ATRASO1   0x000017    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                  ATRASO2   0x000012    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                  ATRASO3   0x00000d    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                   INICIO   0x000001    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                   REPETE   0x000006    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000001    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                   REPETE   0x000006    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                   ATRASO   0x00000b    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                  ATRASO3   0x00000d    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                  ATRASO2   0x000012    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+                  ATRASO1   0x000017    program     static C:\Users\Rodrigo\Documents\FACUL\AC2\ML\PIC\P1\2_PIC_aula01_MPLAB\pic_aula01\pisca.asm
+
+

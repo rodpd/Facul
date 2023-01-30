@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">A06</string>
+    <string name="tab_text_1">Cadastrar</string>
+    <string name="tab_text_2">Listar</string>
+    <string name="tab_text_3">Atualizar</string>
+    <string name="salvar">Salvar</string>
+    <string name="identificador">Identificador</string>
+    <string name="e_mail">E-mail</string>
+    <string name="nome">Nome</string>
+    <string name="buscar">Buscar</string>
+    <string name="deletar">Deletar</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="data_de_nascimento">Data de\nNascimento</string>
+    <string name="endereco">Endereço</string>
+    <string name="telefone">Telefone</string>
+</resources>

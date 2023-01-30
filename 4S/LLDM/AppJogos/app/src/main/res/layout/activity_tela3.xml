@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela3"
+    android:orientation="vertical"
+    android:background="@color/azul">
+
+    <TextView
+        android:id="@+id/tvInsira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insira_um_numero"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"
+        android:textColor="@color/rosa"
+        />
+
+    <EditText
+        android:id="@+id/edtNum"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/rosa"
+        />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/azul2"
+        android:textColor="@color/rosa"
+        />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/rosa"
+        />
+
+    <TextView
+        android:id="@+id/tvTentativas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/rosa"/>
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reiniciar"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        android:background="@color/azul2"
+        android:textColor="@color/rosa"
+        />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PFinal</string>
+    <string name="tab_text_1">Bateria</string>
+    <string name="tab_text_2">Sons</string>
+    <string name="de_nome">Dê um nome para o áudio</string>
+</resources>

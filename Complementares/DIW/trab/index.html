@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal de Filmes</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-darkgray navbar-light ml-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.png" class="logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destaque">Em destaque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#entrevistas">Entrevistas & Making of</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#novidades">Novidades</a>
+                    </li>
+                    <li>
+                        <div class="input-group mb-3">
+                            <button id="btn_pesquisa" class="btn bg-white" type="button" id="button-addon1"><img
+                                    class="small_img" src="imgs/search.png" alt=""></button>
+                            <input id="input_pesquisa" type="text" class="form-control" placeholder="Pesquisar filme"
+                                aria-label="Pesquisar filme">
+                            <button id="btn_cancelar_pesquisa" class="btn bg-white" type="button"
+                                id="button-addon1"><img class="small_img" src="imgs/cancel.png" alt=""></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+<main class="container-fluid">
+
+    <section class="lancamentos bg-lightgray" id="lancamentos">
+        <!-- carousel c/ card -->
+        <h1 class="titulo" id="titulo_lancamentos">Lançamentos</h1>
+        <div>
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <iframe class="iframe_trailer" src="https://www.youtube.com/embed/X23XCFgdh2M"
+                                    title="Youtube player" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 lancamentos_info">
+                                <h2 class="nome_filme">Doutor Estranho no Multiverso da Loucura</h2>
+                                <p class="sinopse"><span class="bold_lancamentos">Sinopse: </span>Em Doutor Estranho no
+                                    Multiverso da
+                                    Loucura, após derrotar Dormammu e enfrentar Thanos nos eventos de Vingadores:
+                                    Ultimato, o Mago Supremo, Stephen Strange (Benedict Cumberbatch), e seu parceiro
+                                    Wong (Benedict Wong), continuam suas pesquisas sobre a Joia do Tempo. Mas um velho
+                                    amigo que virou inimigo coloca um ponto final nos seus planos e faz com que Strange
+                                    desencadeie um mal indescritível, o obrigando a enfrentar uma nova e poderosa
+                                    ameaça. O longa se conecta com a série do Disney+ WandaVision e tem relação também
+                                    com Loki. O longa pertence a fase 4 do MCU onde a realidade do universo pode entrar
+                                    em colapso por causa do mesmo feitiço que trouxe os vilões do Teioso para o mundo
+                                    dos Vingadores e o Mago Supremo precisará contar com a ajuda de Wanda (Elizabeth
+                                    Olsen), que vive isolada desde os eventos de WandaVision.</p>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <p><span class="bold_lancamentos">Diretor: </span>Sam Raimi</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <p><span class="bold_lancamentos">Roteiro: </span>Michael Waldron, Scott
+                                            Derrickson</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p><span class="bold_lancamentos">Estreia: </span>5 de maio de 2022</p>
+                                    </div>
+                                </div>
+                                <p><span class="bold_lancamentos">Elenco: </span></p>
+                                <p>Benedict Cumberbatch | Elizabeth Olsen | Rachel McAdams</p>
+                                <p><span class="bold_lancamentos">Avaliação:</span></p>
+                                <p class="avaliacao_lancamentos">★★★★★</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <iframe class="iframe_trailer" src="https://www.youtube.com/embed/gLRLkTdi5Ns"
+                                    title="Youtube player" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 lancamentos_info">
+                                <h2 class="nome_filme">SONIC 2 - O FILME</h2>
+                                <p class="sinopse"><span class="bold_lancamentos">Sinopse: </span>Sonic 2 - O Filme é
+                                    uma sequência dos
+                                    acontecimentos do primeiro live-action de Sonic - O Filme, baseado no videogame de
+                                    sucesso. Após conseguir se estabelecer em Green Hills, Sonic está pronto para mais
+                                    liberdade e quer provar que tem o necessário para ser um herói de verdade. Seu teste
+                                    virá quando Tom e Maddie concordam em deixá-lo em casa enquanto saem de férias para
+                                    ir ao casamento da irmã de Rachel, no Havaí. Mas para a infelicidade do ouriço, a
+                                    data acaba coincidindo com o retorno do Dr. Robotnik, dessa vez com um novo
+                                    parceiro, Knuckles, depois que o doutor do mal vai embora para o planeta cogumelo. O
+                                    terrível Robotnik está à procura de uma esmeralda com o poder de destruir
+                                    civilizações. Sonic se une a um novo companheiro, Tails, e juntos eles embarcam em
+                                    uma jornada para encontrar a esmeralda antes que ela caia nas mãos erradas.</p>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <p><span class="bold_lancamentos">Diretor: </span>Jeff Fowler</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <p><span class="bold_lancamentos">Roteiro: </span>Patrick Casey, Patrick Casey
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p><span class="bold_lancamentos">Estreia: </span>7 de abril de 2022</p>
+                                    </div>
+                                </div>
+                                <p><span class="bold_lancamentos">Elenco: </span></p>
+                                <p>Ben Schwartz | Idris Elba | Colleen O'Shaughnessey</p>
+                                <p><span class="bold_lancamentos">Avaliação:</span></p>
+                                <p class="avaliacao_lancamentos">★★★★☆</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <iframe class="iframe_trailer" src="https://www.youtube.com/embed/HJv4LQxbVEA"
+                                    title="Youtube player" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 lancamentos_info">
+                                <h2 class="nome_filme">BATMAN</h2>
+                                <p class="sinopse"><span class="bold_lancamentos">Sinopse: </span>Batman (The Batman, no
+                                    original) segue
+                                    o segundo ano de Bruce Wayne (Robert Pattinson) como o herói de Gotham, causando
+                                    medo nos corações dos criminosos da sombria cidade. Com apenas alguns aliados de
+                                    confiança - Alfred Pennyworth (Andy Serkis) e o tenente James Gordon (Jeffrey
+                                    Wright) - entre a rede corrupta de funcionários e figuras importantes do distrito, o
+                                    vigilante solitário se estabeleceu como a única personificação da vingança entre
+                                    seus concidadãos. Durante uma de suas investigações, Bruce acaba envolvendo a si
+                                    mesmo e Gordon em um jogo de gato e rato, ao investigar uma série de maquinações
+                                    sádicas em uma trilha de pistas enigmáticas estabelecida pelo vilão Charada. Quando
+                                    o trabalho acaba o levando a descobrir uma onda de corrupção que envolve o nome de
+                                    sua família, pondo em risco a própria integridade e as memórias que tinha sobre seu
+                                    pai, Thomas Wayne, as evidências começam a chegar mais perto de casa, precisando,
+                                    Batman, forjar novos relacionamentos, para assim desmascarar o culpado e fazer
+                                    justiça ao abuso de poder e à corrupção que há muito tempo assola Gotham City.</p>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <p><span class="bold_lancamentos">Diretor: </span>Matt Reeves</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <p><span class="bold_lancamentos">Roteiro: </span>Matt Reeves, Peter Craig</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p><span class="bold_lancamentos">Estreia: </span>3 de março de 2022</p>
+                                    </div>
+                                </div>
+                                <p><span class="bold_lancamentos">Elenco: </span></p>
+                                <p>Robert Pattinson | Zoë Kravitz | Paul Dano</p>
+                                <p><span class="bold_lancamentos">Avaliação:</span></p>
+                                <p class="avaliacao_lancamentos">★★★★☆</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <iframe class="iframe_trailer" src="https://www.youtube.com/embed/HLdHpxdSmOM"
+                                    title="Youtube player" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 lancamentos_info">
+                                <h2 class="nome_filme">OS CARAS MALVADOS</h2>
+                                <p class="sinopse"><span class="bold_lancamentos">Sinopse: </span>Baseado nos quadrinhos
+                                    de Aaron
+                                    Blabey, Os Caras Malvados segue um grupo de animais ladrões e suas travessuras. Sr.
+                                    Lobo, Srta. Tarântula, Sr. Tubarão, Sr. Piranha e Sr. Cobra sempre foram vistos como
+                                    maus, desajustados e que assustam todo mundo que os vê. Eles têm uma longa história
+                                    criminal, roubando tudo o que eles querem e como eles querem. Em um de seus planos
+                                    de assalto em um evento de gala, Sr. Lobo percebe que eles podem ser bons, ou
+                                    melhor, que pessoas podem ver eles como bons animais. Sendo pegos pela polícia após
+                                    um plano malsucedido, o grupo de ladrões decidem se passarem de bonzinhos para que a
+                                    polícia não fique na cola deles e para não serem mandados para a prisão. Eles acabam
+                                    aceitando a proposta do Professor Marmelada para ajudá-lo a recuperar
+                                    porquinhos-da-índia que estão sendo usados para testes em uma empresa. Será que a
+                                    farsa do grupo se manterá? Ou eles vão finalmente serem os bonzinhos da história?
+                                </p>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <p><span class="bold_lancamentos">Diretor: </span>Pierre Perifel</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <p><span class="bold_lancamentos">Roteiro: </span>Etan Cohen, Aaron Blabey</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p><span class="bold_lancamentos">Estreia: </span>17 de março de 2022</p>
+                                    </div>
+                                </div>
+                                <p><span class="bold_lancamentos">Elenco: </span></p>
+                                <p>Romulo Estrela | Sam Rockwell | Sergio Guizé</p>
+                                <p><span class="bold_lancamentos">Avaliação:</span></p>
+                                <p class="avaliacao_lancamentos">★★★★★</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao" id="destaque">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="titulo">Em destaque</h2>
+            </div>
+            <div class="col-6 d-flex flex-row-reverse align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-light btn-outline-dark dropdown-toggle" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoria: TODOS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Comédia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <img class="banner" src="imgs/bannerEncanto.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <img class="banner" src="imgs/bannerDune.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <img class="banner" src="imgs/bannerSpider.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <img class="banner" src="imgs/bannerAdam.jpg" alt="">
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-secondary carregar_mais">
+                + Carregar mais filmes
+            </button>
+        </div>
+    </section>
+
+    <section class="secao" id="avaliacoes">
+        <h2 class="titulo">Últimas avaliações</h2>
+        <!-- card -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="usuario_avaliacao" src="imgs/user.png" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="nome_avaliacao">Daniel</h4>
+                        <p class="avaliacao_texto"><strong>Avaliação: </strong>Lindo lindo... pena que o desfecho vem de
+                            maneira rápida e simplificada demais .... mas mesmo assim é uma animação com selo Disney de
+                            beleza e emoção. Entre as melhores da marca.</p>
+                        <pre class="avaliacao">★ ★ ★ ★ ☆    26/12/2021</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="usuario_avaliacao" src="imgs/user.png" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="nome_avaliacao">Ryan</h4>
+                        <p class="avaliacao_texto"><strong>Avaliação: </strong>Muito lindo visualmente e com uma
+                            história que prende do início ao fim, muito divertido e emocionante. Vale muito a
+                            experiência!</p>
+                        <pre class="avaliacao">★ ★ ★ ★ ★    03/12/2021</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="usuario_avaliacao" src="imgs/user.png" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="nome_avaliacao">Eduardo</h4>
+                        <p class="avaliacao_texto" id="ultima_avaliacao_texto"><strong>Avaliação: </strong>Foi um bom
+                            passa tempo, ele é visualmente
+                            muito bonito, mas o humor é muito fraco e muitas vezes sem graça</p>
+                        <pre class="avaliacao">★ ★ ★ ☆ ☆    29/11/2020</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-secondary carregar_mais">
+                + Carregar mais avaliações
+            </button>
+        </div>
+    </section>
+
+    <section class="secao bg-gray" id="entrevistas">
+        <h2 class="titulo">Entrevistas & Making of</h2>
+        <!-- card -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div>
+                    <iframe class="iframe_entrevista" src="https://www.youtube.com/embed/lsbepjKvO8M"
+                        title="Youtube player" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+                <p>
+                    <h4><strong>Filme:</strong> King's Man: A Origem</h4>
+                </p>
+                <p><strong>Diretor:</strong> Matthew Vaughn</p>
+                <div class="row">
+                    <div class="col-7">
+                        <p><strong>Roteiro:</strong> Matthew Vaughn</p>
+                    </div>
+                    <div class="col-5">
+                        <p><strong> Estreia:</strong> 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div>
+                    <iframe class="iframe_entrevista" src="https://www.youtube.com/embed/USIaVdX6pow"
+                        title="Youtube player" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+                <p>
+                    <h4><strong>Filme:</strong> Matrix: Resurrections</h4>
+                </p>
+                <p><strong>Diretor:</strong> Lana Wachowski</p>
+                <div class="row">
+                    <div class="col-7">
+                        <p><strong>Roteiro:</strong> Lana Wachowski</p>
+                    </div>
+                    <div class="col-5">
+                        <p><strong> Estreia:</strong> 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div>
+                    <iframe id="ultimo_iframe_entrevista" class="iframe_entrevista"
+                        src="https://www.youtube.com/embed/YEj3juMYCn4" title="Youtube player" frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>
+                    <h4><strong>Filme:</strong> Não Olhe para Cima</h4>
+                </p>
+                <p><strong>Diretor:</strong> Adam McKay</p>
+                <div class="row">
+                    <div class="col-7">
+                        <p><strong>Roteiro:</strong> Adam McKay</p>
+                    </div>
+                    <div class="col-5">
+                        <p><strong> Estreia:</strong> 2021</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="btn btn-secondary carregar_mais">
+                + Carregar mais filmes
+            </button>
+        </div>
+    </section>
+
+    <section class="secao" id="novidades">
+        <div class="row">
+            <div class="novidades col-lg-8 col-md-12 col-sm-12 col-12">
+                <h2 class="titulo">Novidades</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <img class="img_novidades" src="imgs/oscar1.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h5>Will Smith pode ser expulso da Academia de Hollywood pela agressão no Oscar</h3>
+                            <p>A Academia de Artes e Ciências Cinematográficas de Hollywood, organização responsável
+                                pelo Oscar, anunciou nesta segunda-feira que condena a conduta de Will Smith durante a
+                                cerimônia realizada no domingo, em Los Angeles, nos Estados Unidos.</p>
+                            <p class="tags"><span class="badge rounded-pill bg-dark">hollywood</span>
+                                <span class="badge rounded-pill bg-dark">oscar</span>
+                                <span class="badge rounded-pill bg-dark">treta</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <img class="img_novidades" src="imgs/oscar2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h5>Oscar 2022: 18 curiosidades da premiação</h3>
+                            <p>A cerimônia do Oscar, que marca o ápice da temporada de premiações, reflete uma indústria
+                                que ainda está passando por grandes mudanças.
+                                Indicados como Duna, Amor, Sublime Amor, King Richard: Criando Campeãs e Belfast,
+                                levaram, em diferentes níveis, o público de volta aos cinemas após longos períodos de
+                                portas fechadas.</p>
+                            <p class="tags"><span class="badge rounded-pill bg-dark">hollywood</span>
+                                <span class="badge rounded-pill bg-dark">oscar</span>
+                                <span class="badge rounded-pill bg-dark">melhor filme</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <img class="img_novidades" src="imgs/oscar3.jpg" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <h5>Oscar 2022: o que as principais premiações do cinema indicam sobre os favoritos</h3>
+                            <p>Nos últimos meses, diversas premiações vêm acontecendo, como o Globo de Ouro, o British
+                                Academy of Film and Television e o Critics Choice Awards, que nos preparam para a noite
+                                em que Academia de Artes e Ciências Cinematográficas entrega as estatuetas.</p>
+                            <p class="tags"><span class="badge rounded-pill bg-dark">hollywood</span>
+                                <span class="badge rounded-pill bg-dark">oscar</span>
+                                <span class="badge rounded-pill bg-dark">melhor filme</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsecao col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-4 col-sm-12 col-12">
+                        <h2 class="titulo">Sobre</h2>
+                        <p>Site voltado para avaliação e discussão de filmes.</p>
+                    </div>
+                    <div class="col-lg-12 col-md-4 col-sm-12 col-12">
+                        <h2 class="titulo">Editorial</h2>
+                        <p><img class="small_img" src="imgs/user2.png" alt=""><strong> Redação: </strong>Dwight</p>
+                        <p><img class="small_img" src="imgs/user2.png" alt=""><strong> Pesquisa: </strong>Spencer</p>
+                        <p><img class="small_img" src="imgs/user2.png" alt=""><strong> Gerente Geral: </strong>Michael
+                            Scott</p>
+                    </div>
+                    <div class="col-lg-12 col-md-4 col-sm-12 col-12">
+                        <h3 class="titulo" id="titulo_redes">Redes sociais:</h3>
+                        <a href="https://facebook.com">
+                            <img class="icone_rede" src="imgs/facebook.png" alt="">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img class="icone_rede" src="imgs/twitter.png" alt="">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img class="icone_rede" src="imgs/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="container-fluid bg-gray p-3 text-center">
+    Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC Minas</strong>
+    <img id="logo_footer" src="imgs/logo.png" alt="logo">
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="GLWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>531</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="boxShader">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>230</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <item>
+     <property name="text">
+      <string>Gouraud</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Phong</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Phong2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Phong3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="lblShader">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>230</y>
+      <width>47</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shaders</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCaptura">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>280</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Captura de Tela</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFundo">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>320</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Definir Cor de Fundo</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>814</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAbrir"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>statusBarMessage(QString)</signal>
+    <signal>setShaderIndex(int)</signal>
+    <signal>setLabelText(QString)</signal>
+    <slot>toggleBackgroundColor(bool)</slot>
+    <slot>showFileOpenDialog()</slot>
+    <slot>takeScreenshot()</slot>
+    <slot>definirCorFundo()</slot>
+    <slot>changeShader(int)</slot>
+    <slot>changeAmbientLight()</slot>
+    <slot>changeDiffuseLight()</slot>
+    <slot>changeSpecularLight()</slot>
+    <slot>changeAmbientMaterial()</slot>
+    <slot>changeSpecularMaterial()</slot>
+    <slot>changeDiffuseMaterial()</slot>
+    <slot>redefinirObjeto()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionAbrir</sender>
+   <signal>triggered()</signal>
+   <receiver>widget</receiver>
+   <slot>showFileOpenDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCaptura</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>takeScreenshot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnFundo</sender>
+   <signal>clicked()</signal>
+   <receiver>widget</receiver>
+   <slot>definirCorFundo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>statusBarMessage(QString)</signal>
+   <receiver>statusbar</receiver>
+   <slot>showMessage(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>406</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>widget</sender>
+   <signal>setShaderIndex(int)</signal>
+   <receiver>boxShader</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>647</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>boxShader</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>changeShader(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>647</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

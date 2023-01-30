@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Web Service</string>
+    <string name="pesquisar_endereco">Pesquisar endereco</string>
+    <string name="complemento">Complemento</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="digite_o_cep_apenas_n_meros">Digite o CEP (apenas números)</string>
+    <string name="bairro">Bairro</string>
+    <string name="localidade">Localidade</string>
+    <string name="lf">LF</string>
+    <string name="uf">UF</string>
+</resources>

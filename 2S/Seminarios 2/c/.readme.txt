@@ -1,0 +1,1 @@
+Para ler numeros de outro arquivo, mudar primeiro fopen no codigo

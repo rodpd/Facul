@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "887343268791",
+    "firebase_url": "https://bateria-18dd1.firebaseio.com",
+    "project_id": "bateria-18dd1",
+    "storage_bucket": "bateria-18dd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887343268791:android:84d44e07f4e5ce97a55e32",
+        "android_client_info": {
+          "package_name": "com.example.pfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887343268791-coonc1q2ip387amab49tmfe9gi3kih7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pfinal",
+            "certificate_hash": "1ccbe0586b108aa9003b20f66a83303447c2452c"
+          }
+        },
+        {
+          "client_id": "887343268791-mkuf98bekesjpoc8fo3sablo602e8kbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvYsMLpUbg41sUC0_tOXrxj9QkuMno3es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887343268791-mkuf98bekesjpoc8fo3sablo602e8kbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

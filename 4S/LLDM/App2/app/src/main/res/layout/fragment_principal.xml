@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalFragment"
+    android:background="@color/azul1">
+
+    <TextView
+        android:id="@+id/lblSons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sons de Animais"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/branco2"
+        />
+
+    <ImageView
+        android:id="@+id/image_sons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/som_animais" />
+
+    <TextView
+        android:id="@+id/lblAdivinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogo adivinha"
+        android:layout_marginTop="380dp"
+        android:gravity="center"
+        android:textColor="@color/branco2"
+        />
+
+    <ImageView
+        android:id="@+id/image_adivinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/jogo"
+        android:layout_marginTop="420dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</FrameLayout>
